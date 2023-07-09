@@ -1,0 +1,263 @@
+/* Reset some default styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set basic styling for the header */
+header {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Add the gap property to set the spacing between items */
+}
+
+nav ul li {
+  margin-right: 0; /* Remove the margin-right */
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 10px; /* Add the desired spacing between items */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Add styles to change the hero text color */
+.hero {
+  background-image: url('path/to/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+  color: #000; /* Change the text color to black */
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #000; /* Change the text color to black */
+}
+
+.hero p {
+  font-size: 20px;
+  color: #000; /* Change the text color to black */
+}
+
+/* Add styles to create separation between paragraphs */
+.description {
+  text-align: center;
+  padding: 40px;
+}
+
+.description h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 18px; /* Increase the font size */
+  margin-bottom: 20px; /* Add margin-bottom to create separation */
+}
+
+/* Add styles to move the footer to the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Add styles to center the footer */
+footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Add styles to give color hues to table sections */
+.results {
+  background-color: #f5f5f5; /* Set a light background color for the section */
+  padding: 20px;
+}
+
+/* Add styles to center the "Game Results" heading */
+.results h2 {
+  text-align: center;
+}
+
+tbody td:nth-child(2) {
+  font-weight: bold;
+}
+
+tbody td {
+  padding: 8px;
+  text-align: center;
+}
+
+thead {
+  background-color: #e0e0e0; /* Set a background color for the table header */
+}
+
+tbody td:last-child {
+  font-weight: bold;
+}
+
+/* Add styles for price-taken and price-protected rows */
+.results {
+  padding: 20px;
+  text-align: center;
+}
+
+.results h2 {
+  text-align: center;
+}
+
+.table-caption {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold;
+  margin-bottom: 10px; /* Increase the distance between caption and table */
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-spacing: 0;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+table td:first-child,
+table th:first-child {
+  padding-left: 16px;
+}
+
+table td:last-child,
+table th:last-child {
+  padding-right: 16px;
+}
+
+.taken-table {
+  background-color: #FFCDD2; /* Set table color for "Taken" rows */
+}
+
+.protected-table {
+  background-color: #BBDEFB; /* Set table color for "Protected" rows */
+}
+
+.position-ladder td:first-child {
+  font-weight: bold;
+}
+
+.taken-table li,
+.protected-table li {
+  flex-basis: 15%;
+}
+
+/* Additional CSS for table cells */
+table td {
+  max-width: 100px; /* Adjust the max-width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  justify-content: center;
+}
+
+/* statistics-info */
+
+.statistics {
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.statistics h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.statistics-info {
+  display: flex;
+  justify-content: center;
+}
+
+.statistics-info p {
+  margin-right: 20px;
+}
+
+.statistics-info p:last-child {
+  margin-right: 0;
+}
+
+/* ------------- Add style to the teams page -----------------*/
+
+.teams-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.teams h2 {
+  text-align: center;
+}
+
+.attackers,
+.defenders {
+  flex-basis: 50%; /* Update the flex-basis value to 50% */
+}
+
+.attackers h3,
+.defenders h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  padding: 8px;
+  background-color: #f5f5f5;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.attackers ul li {
+  background-color: #FFCDD2;
+}
+
+.defenders ul li {
+  background-color: #BBDEFB;
+}
+
